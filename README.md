@@ -30,14 +30,12 @@
    - Enter the following: git clone 'https://github.com/Luken1990/CarApi.git' then press enter.
 
 
-<img src="https://user-images.githubusercontent.com/23103970/220468216-a18357d5-b877-4698-bc0a-188eb4b8d48c.png" width="450">
+<img src="https://user-images.githubusercontent.com/23103970/220468216-a18357d5-b877-4698-bc0a-188eb4b8d48c.png" width="350">
 
 3. Install NodeJs: https://nodejs.org/en/download/
 4. Open your IDE, navigate to the folder/file.
 5. Install all dependencies enter: npm install
 6. Run the program enter: npm start 
 
-<img src="https://user-images.githubusercontent.com/23103970/220467777-0c7b6c5e-0c8b-4cc2-a6b0-9605f0e81afa.png" width="450">
-
-
+https://user-images.githubusercontent.com/23103970/220470270-a4bcaa31-5224-40c6-be3f-5847ec4771c1.mp4
 
