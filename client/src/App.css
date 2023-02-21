@@ -1,0 +1,180 @@
+/* general styling and variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --sm-scr: 300px;
+  --lg-scr: 400px;
+  --input-box-width: var(--lg-scr);
+}
+
+body {
+  background-image: url('./assets/samuele-errico-piccarini-FMbWFDiVRPs-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* main styling */
+
+main {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cars-container {
+  width: calc(100% - var(--input-box-width));
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.cars-container > div {
+  max-width: 1500px;
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+
+.form-container {
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  background-color: #ffffff;
+  width: var(--input-box-width);
+  padding: 30px;
+}
+
+.form-container form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #d4d4d4;
+}
+
+.car {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.info {
+  padding: 30px;
+}
+
+.info p {
+  margin: 0;
+}
+
+.info small {
+  color: rgb(150, 150, 150);
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn-container button {
+  margin-right: 10px;
+}
+
+figure {
+  margin-bottom: 0 !important;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reset-btn {
+  margin-top: 16px;
+}
+
+.sold {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .cars-container > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cars-container {
+    width: calc(100% - var(--sm-scr));
+  }
+
+  .car {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 0px;
+    height: auto;
+  }
+
+  .cars-container > div {
+    margin: 0 30px;
+  }
+
+  .info {
+    order: 1;
+    padding: 20px;
+  }
+
+  .form-container {
+    width: var(--sm-scr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
+  }
+
+  .form-container {
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+
+  .cars-container {
+    width: auto;
+  }
+
+  .cars-container > div {
+    margin: 0;
+  }
+}
