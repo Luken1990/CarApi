@@ -37,5 +37,5 @@
 5. Install all dependencies enter: npm install
 6. Run the program enter: npm start 
 
-https://user-images.githubusercontent.com/23103970/220470270-a4bcaa31-5224-40c6-be3f-5847ec4771c1.mp4
+<img src="https://user-images.githubusercontent.com/23103970/220471174-7ea439ea-8063-4069-99b7-b6091bc4c280.png" width="450">
 
